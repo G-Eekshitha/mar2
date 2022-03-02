@@ -1,0 +1,48 @@
+a=[]
+m=int(input('enter no. of row'))
+n=int(input('enter no. of colum'))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    a.append(row)
+print(a)
+b=[]
+m=int(input('enter no. of row'))
+n=int(input('enter no. of colum'))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    b.append(row)
+print(b)
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        result[i][j]=a[i][j]-b[i][j]
+print('resultant matrix is :')
+for i in range(m):
+    for j in range(n):
+        print(result[i][j],end=' ')
+    print()   
+        
+            
+enter no. of row2
+enter no. of colum2
+6
+7
+8
+9
+[[6, 7], [8, 9]]
+enter no. of row2
+enter no. of colum2
+2
+3
+4
+5
+[[2, 3], [4, 5]]
+resultant matrix is :
+4 4 
+4 4 
